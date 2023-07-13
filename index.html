@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Rock Paper Scissors</title>
+	<link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+</head>
+<body>
+	<h1 class="head">
+		<div class="header">Rock   Paper   Scissors</div>
+	</h1>
+
+	<div class="cont">
+		<div class="cont1 item1">Choose your Weapon</div>
+		<div class="cont1 item2">First to score 5 points, Wins the Game</div>
+	</div>
+
+	<div class="disp1">
+		<div class="player">
+			<div class="pl pl1">❔</div>
+			<div class="pl score1">Player: 0</div>
+		</div>
+		<div class="comp">
+			<div class="com pl2">❔</div>
+			<div class="com score2">Computer: 0</div>
+		</div>
+	</div>
+
+	<div class="disp2">
+		<button class="b0 b1" onclick="handle('rock')">✊</button>
+		<button class="b0 b2" onclick="handle('paper')">✋</button>
+		<button class="b0 b3" onclick="handle('scissors')">✌</button>
+	</div>
+
+	<footer class="foot">Copyright © A07K
+		<a href="https://github.com/A07K" target="_blank">
+        <i class="fab fa-github" aria-hidden="true"></i></a>
+	</footer>
+
+	<div class="modal" id="endgameModal">
+  		<p class="modal-title" id="endgameMsg"></p>
+  		<button class="btn btn-restart" id="restartBtn">Play again</button>
+	</div>
+
+	<script src="javascript.js"></script>
+</body>
+</html>
